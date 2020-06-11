@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gender Prediction</title>
+	<h1>Gender Prediction by Name</h1>
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+<body>
+	<form action="{{url_for('predict')}}" method="post">
+		
+		<input type="text" name="Name" placeholder="Name" required="required">
+		<button type="submit" class="btn btn-primary btn-block btn-large">Predict the Result</button>
+	</form>
+	<br>
+	<br>
+	{{prediction_gen }}
+
+</body>
+</html>
